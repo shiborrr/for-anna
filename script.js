@@ -1,4 +1,3 @@
-// Ensure this code runs after the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", function () {
   const firstButton = document.querySelector('.reveal-button');
   const secondButton = document.querySelector('.reveal-button-2');
@@ -17,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Trigger when the second button (envelope) is clicked
   secondButton.addEventListener('click', function () {
       secondButton.classList.add('fade-out'); // Fade out animation for the envelope
-      
       // Delay the appearance of the letter content after the envelope is completely gone
       setTimeout(function () {
           letterContent.classList.add('show');  // Show the letter content
